@@ -1,0 +1,13 @@
+﻿@model Banda //sempre adicionar @model e a seguir o modelo que quero ir buscar
+<div class="card"  style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title"> Foi adicionada a seguinte banda:</h5>
+        <p>NomeBanda</p>@Model.NomeBanda
+        <p>NumerodeElementos</p>@Model.NumerodeElementos
+        <p>Genero</p>@Model.Genero
+        <p>BandaTop</p>@Model.BandaTop
+    </div>
+    <div>
+        <a asp-action="Index">Bandas</a>
+    </div> 
+</div> 

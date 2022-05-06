@@ -1,0 +1,29 @@
+﻿
+@model Banda //aqui tenho que meter o @model e o nome para o programa entender que os dados são referentes ao modelovpreviamente criado
+<div class="w-50">
+    <form asp-action="NovaBanda"method="post">
+        <div asp-validation-summary="All"></div>  
+        <div>
+            <label class="form-label" asp-for="NomeBanda">Nome da banda</label>
+            <input class="form-control" asp-for="NomeBanda"/>
+        </div>    
+            
+     
+         <div>
+            <label class="form-label" asp-for="NumerodeElementos">Número de elementos</label>
+            <input class="form-control" asp-for="NumerodeElementos"/>
+        </div> 
+          
+        <div>
+            <label asp-for="Genero">Genero</label> <select asp-for="Genero">
+           <option value="Rock">Rock</option> <option value="Samba">Alternativa</option> <option value="Pop">Pop</option> <option value="Metal">Metal</option> <option value="HipHop">Hip-Hop</option></select>
+        </div>
+
+            <label class="form-label" asp-for="BandaTop">Banda Top</label>
+            <input type="checkbox" id="BandaTop">
+        </div>
+         <div><button type="submit">Adicionar Banda</button></div>
+    <div>
+
+    </form>
+</div>
